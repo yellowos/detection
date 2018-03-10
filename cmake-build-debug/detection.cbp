@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="detection"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="clang"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\..\usr\local\share\OpenCV\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="detection">
+				<Option output="/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/detection" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 detection"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="detection/fast">
+				<Option output="/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/detection" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 detection/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/yellowos/Desktop/intel杯/detection/Capture.cpp">
+			<Option target="detection"/>
+		</Unit>
+		<Unit filename="/Users/yellowos/Desktop/intel杯/detection/Capture.h">
+			<Option target="detection"/>
+		</Unit>
+		<Unit filename="/Users/yellowos/Desktop/intel杯/detection/Frame.cpp">
+			<Option target="detection"/>
+		</Unit>
+		<Unit filename="/Users/yellowos/Desktop/intel杯/detection/Frame.h">
+			<Option target="detection"/>
+		</Unit>
+		<Unit filename="/Users/yellowos/Desktop/intel杯/detection/Main.cpp">
+			<Option target="detection"/>
+		</Unit>
+		<Unit filename="/Users/yellowos/Desktop/intel杯/detection/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/yellowos/Desktop/intel杯/detection/../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/yellowos/Desktop/intel杯/detection/../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/yellowos/Desktop/intel杯/detection/../../../../../usr/local/share/OpenCV/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/yellowos/Desktop/intel杯/detection/../../../../../usr/local/share/OpenCV/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,3 @@
+/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/yellowos/Desktop/intel杯/detection/cmake-build-debug/CMakeFiles/detection.dir
