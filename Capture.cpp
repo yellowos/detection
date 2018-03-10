@@ -151,19 +151,21 @@ void Capture::cut(map<milliseconds, Frame>& framesFlow, mutex& mutex_frames, vec
 
 void Capture::find(map<milliseconds, Frame>& framesFlow, mutex& mutex_frames, vector<map<milliseconds, vector<Point>>>& allTracks, mutex& mutex_tracks)
 {
-	BackgroundSubtractorMOG2 backgroundSubtractor(10, 25, false);
-	vector<Vec4i> hierarchy;
+//    printf("try find\n");
+//	BackgroundSubtractorMOG2 backgroundSubtractor(10, 25, false);
+    static Ptr<BackgroundSubtractor> backgroundSubtractor = createBackgroundSubtractorMOG2(20, 16, true);
+	static vector<Vec4i> hierarchy;
 	TermCriteria termcrit(CV_TERMCRIT_ITER | CV_TERMCRIT_EPS, 20, 0.03);
-	Size subPixWinSize(10, 10), winSize(31, 31);
-	bool firstTime = true;
-	Mat savemask, gray, prevGray;
-	bool endFlag = true;
+	static Size subPixWinSize(10, 10), winSize(31, 31);
+	static bool firstTime = true;
+	static Mat savemask, gray, prevGray;
+	int endFlag = 1;
 	while (endFlag)
 	{
 		Mat frame, mask, fgimg;
 		currentTime = duration_cast<milliseconds>(high_resolution_clock::now().time_since_epoch());
 		capture >> frame;
-		backgroundSubtractor(frame, mask, -1);
+		backgroundSubtractor->apply(frame, mask, -1);
 		mask.copyTo(savemask);
 		Frame frametoMap(frame, savemask);
 		mutex_frames.lock();
@@ -269,16 +271,19 @@ void Capture::find(map<milliseconds, Frame>& framesFlow, mutex& mutex_frames, ve
 		int delay = 1;
 		waitKey(delay);
 		milliseconds endtime = duration_cast<milliseconds>(high_resolution_clock::now().time_since_epoch());
-		fps = (int) 1000 / (endtime - currentTime).count();
+		fps = 1;/*(int) 1000 / (endtime - currentTime);*/
 		swap(prevGray, gray);
 		lastTime = currentTime;
-	}
+        endFlag--;
+    }
 }
 
 
 void Capture::display(map<milliseconds, Frame>& framesFlow, mutex& mutex_frames, vector<map<milliseconds, vector<Point>>>& allTracks, mutex& mutex_tracks)
 {
-	bool endFlag = true;
+//    printf("try display");
+//	int endFlag = 5;
+    int endFlag = 1;
 	while (endFlag)
 	{
 		mutex_frames.lock();
@@ -317,6 +322,7 @@ void Capture::display(map<milliseconds, Frame>& framesFlow, mutex& mutex_frames,
 				FONT_HERSHEY_COMPLEX_SMALL, 0.8, Scalar(255,0,255), 1, 8);
 		imshow("tracks", outFrame);
 		waitKey(10);
+        endFlag--;
 	}
 }
 
